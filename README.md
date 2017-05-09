@@ -1,5 +1,37 @@
 ## Website Performance Optimization portfolio project
 
+### What I have done
+
+#### Part 1: Optimize PageSpeed Insights score for index.html
+
+1. Add async for analytics scripts
+2. Inline the CSS
+3. Optimize images
+
+#### Part 2: Optimize Frames per Second in pizza.html
+
+1. For resize pizza size issue, use percentage width instead of px
+2. Figure out the rows of background pizzas according to the screen resolution
+3. Revise updatePosition function to avoid FSL
+
+### Run the repository on you local machine
+
+1. Check out the repository and open index.html in your browser
+2. To inspect the site on your phone, you can run a local server
+
+  ```bash
+  $> cd /path/to/your-project-folder
+  $> python -m SimpleHTTPServer 8080
+  ```
+Open a browser and visit localhost:8080
+
+3. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
+
+  ``` bash
+  $> cd /path/to/your-project-folder
+  $> ./ngrok http 8080
+  ```
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.
@@ -32,7 +64,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
